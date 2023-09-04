@@ -1,7 +1,7 @@
 ---
 title: "Firstpost"
 date: 2023-09-04T13:08:04+05:30
-draft: true
+draft: false
 ---
 
 This is some content

@@ -1,4 +1,4 @@
-baseURL = 'https://tap.github.io/'
+baseURL = 'https://thinkaboutprivacy.github.io/'
 languageCode = 'en-us'
 title = 'Think About Privacy'
 theme = 'smigle-hugo-theme'
