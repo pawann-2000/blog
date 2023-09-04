@@ -1,0 +1,4 @@
+[submodule "thinkaboutprivacy/public"]
+	path = thinkaboutprivacy/public
+	url = https://github.com/pawann-2000/tap.github.io
+	branch = main
