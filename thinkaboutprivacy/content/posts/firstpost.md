@@ -1,13 +1,6 @@
 ---
-title: "Firstpost"
+title: "Why this blog?"
 date: 2023-09-04T13:08:04+05:30
-draft: false
 ---
 
-This is some content
-
-```java
-public static void main(String[] args) {
-  System.out.println("HEllo!!");
-}
-```
+This blog is just meant to be my perspective on how privacy and security can bring peace and tranquility to one's life, Stay tuned for more stuff ;)
