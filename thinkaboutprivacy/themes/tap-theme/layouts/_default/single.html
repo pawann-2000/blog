@@ -1,0 +1,49 @@
+{{ define "main" }}
+    <div class="container">
+        <section id="single-article">
+            <article id="article-content">    
+                <div>
+                    <h1>{{ .Title }}</h1>
+                    <div class="authored-date">
+                        <span>Written on:</span>
+                        <time datetime="{{ .Params.date.Format "2006-01-02T15:04:05" }}"> {{ .Params.date.Format "Mon Jan 2, 2006" }} </time>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div>
+                    {{ .Content }}
+                </div>
+
+                {{ with .Params.tags }}
+                    <ul id="tags">
+                        {{ range .}}
+                            <li><a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ . }}</a></li>
+                        {{ end }}
+                    </ul>
+                {{ end }}
+            </article>
+            <aside id="meta">
+                <span>also check out:</span>
+                <div>
+                    {{ with .PrevInSection }}
+                        <div>
+                            <h3>
+                                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                            </h3>
+                        </div>
+                    {{ end }}
+
+                    {{ with .NextInSection }}
+                        <div>
+                            <h3>
+                                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                            </h3>
+                        </div>
+                    {{ end }}
+                </div>
+            </aside>
+        </section>
+    </div>
+{{ end }}
